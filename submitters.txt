@@ -1,0 +1,5 @@
+submitters: Evgeny Vendrov 313962193
+
+David Voihanski 315873455
+
+link for GitHub : https://github.com/EvgenyVendrov/assignment1OScourse

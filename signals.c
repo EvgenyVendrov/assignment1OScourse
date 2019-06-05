@@ -47,10 +47,12 @@ int main (void) {
     int stat;
     pid_t deadPid ;
     int indexOfProcess = 0;
-    pid_t  pidForked;
+    pid_t  pidForked=7;
     pid_t pidArr[5];
     while(indexOfProcess<5) {
-        pidForked=fork();
+        //make only the father fork..        
+        if(pidForked!=0)        
+            pidForked=fork();
         //in a case of "fork" error
         if(pidForked<0) {
             printf("\n ERROR---> FORK DIDNT SUCSEED! \n");
